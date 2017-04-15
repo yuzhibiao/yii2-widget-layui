@@ -1,6 +1,6 @@
 {
-    "name": "havoe/yii2-layui-widget",
-    "description": "yii2-layui-widget",
+    "name": "havoe/yii2-widget-layui",
+    "description": "yii2-widget-layui",
     "license": "BSD-3-Clause",
     "authors": [
         {
