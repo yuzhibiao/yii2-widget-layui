@@ -1,0 +1,16 @@
+{
+    "name": "havoe/yii2-layui-widget",
+    "description": "yii2-layui-widget",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "havoe"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "havoe\\layui\\": "src/"
+        }
+    }
+}
