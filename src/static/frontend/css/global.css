@@ -103,27 +103,27 @@ html .fly-full{margin-top: 65px;}
 .header .main{position:relative; margin:0 auto; min-height: 0;}
 .logo{position:absolute; top: 13px; left:0; width: 135px; height: 37px; text-indent:-666px; background:url(../images/logo.png) no-repeat;}
 
-.nav{position:absolute; left: 220px; top: 18px;}
-.nav a{padding: 0 20px; font-size:14px; color:#999;}
-.nav a i{position:relative; top: 5px; padding-right:8px; font-size:18px; font-size: 26px;}
-.nav a .icon-shouye, .nav a .icon-shezhi{top: 2px;}
-.nav a:hover{transition: all .4s;}
-.nav a:hover, .nav .nav-this{ color:#fff;}
+.layuiNav{position:absolute; left: 220px; top: 18px;}
+.layuiNav a{padding: 0 20px; font-size:14px; color:#999;}
+.layuiNav a i{position:relative; top: 5px; padding-right:8px; font-size:18px; font-size: 26px;}
+.layuiNav a .icon-shouye, .layuiNav a .icon-shezhi{top: 2px;}
+.layuiNav a:hover{transition: all .4s;}
+.layuiNav a:hover, .layuiNav .layuiNav-this{ color:#fff;}
 
-.nav-user{position:absolute; top: 12px; right:0;}
-.nav-user span, 
-.nav-user .unlogin, 
+.layuiNav-user{position:absolute; top: 12px; right:0;}
+.layuiNav-user span, 
+.layuiNav-user .unlogin, 
 .out-login,
 .avatar,
 .avatar *,
-.nav-user .nav{display:inline-block; vertical-align: middle; *display: inline; *zoom:1;}
-.nav-user .unlogin{margin-right: 10px; margin-top: 8px;}
-.nav-user span{position: relative;}
-.nav-user span a{padding:0 10px; color:#A9B7B7}
-.nav-user span a:hover{color:#fff;}
-.nav-user .nav{position:relative; top: -2px; left: auto; right: 0; margin-left: 30px;}
-.nav-user .nav a{padding: 0 10px;}
-.nav-user .unlogin i{margin-bottom: 12px;}
+.layuiNav-user .layuiNav{display:inline-block; vertical-align: middle; *display: inline; *zoom:1;}
+.layuiNav-user .unlogin{margin-right: 10px; margin-top: 8px;}
+.layuiNav-user span{position: relative;}
+.layuiNav-user span a{padding:0 10px; color:#A9B7B7}
+.layuiNav-user span a:hover{color:#fff;}
+.layuiNav-user .layuiNav{position:relative; top: -2px; left: auto; right: 0; margin-left: 30px;}
+.layuiNav-user .layuiNav a{padding: 0 10px;}
+.layuiNav-user .unlogin i{margin-bottom: 12px;}
 
 .out-login{margin-left:20px; text-align:center}
 .out-login a{color:#A9B7B7; font-size:30px; padding:0 10px;}
@@ -134,8 +134,8 @@ html .fly-full{margin-top: 65px;}
 .avatar cite, .avatar i{margin-left: 10px}
 .avatar i{line-height: 20px; color: #FF7200;}
 
-.nav-message{position:absolute; top:0; left: -35px; height:20px; line-height:20px; padding:0 6px; background-color:#FF7200; color:#fff;}
-.nav-message:hover{color:#fff;}
+.layuiNav-message{position:absolute; top:0; left: -35px; height:20px; line-height:20px; padding:0 6px; background-color:#FF7200; color:#fff;}
+.layuiNav-message:hover{color:#fff;}
 
 /* 底部 */
 .footer {
@@ -209,8 +209,8 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 
 /* 用户中心 */
 body .fly-user-main{position: relative; width: 1085px; min-height: 600px; margin: 20px auto;}
-.fly-user-main>.layui-nav{position: absolute; left: 0; top: 0; z-index: 1000; height: 100%; padding: 10px 0;}
-.fly-user-main>.layui-nav .layui-icon{position: relative; top: 2px; font-size: 20px; margin-right: 10px;}
+.fly-user-main>.layui-layuiNav{position: absolute; left: 0; top: 0; z-index: 1000; height: 100%; padding: 10px 0;}
+.fly-user-main>.layui-layuiNav .layui-icon{position: relative; top: 2px; font-size: 20px; margin-right: 10px;}
 .fly-user-main>.fly-panel{width: 860px; min-height: 575px; margin: 0 0 10px 215px;}
 .fly-user-main .fly-none{min-height: 0;}
 .fly-panel-user[pad20]{padding-top: 5px;}
@@ -490,18 +490,18 @@ body .fly-user-main{position: relative; width: 1085px; min-height: 600px; margin
 }
 
 @media screen and (max-width: 750px) {
-  .nav,
+  .layuiNav,
   .fly-tab,
   .fly-search,
-  .nav-user .unlogin,
-  .nav-user .avatar,
-  .nav-user>span,
+  .layuiNav-user .unlogin,
+  .layuiNav-user .avatar,
+  .layuiNav-user>span,
   .fly-list-li h2 span,
   .fly-list-hint{display:none;}
   
-  .nav-user{top: 18px;}
-  .nav-user .out-login{display: block; margin-right: 15px;}
-  .nav-message{left: 0;}
+  .layuiNav-user{top: 18px;}
+  .layuiNav-user .out-login{display: block; margin-right: 15px;}
+  .layuiNav-message{left: 0;}
   .fly-list-li h2 a{max-width: 100%;}
   .fly-list-one li{margin: 0 10px;}
   
@@ -526,10 +526,10 @@ body .fly-user-main{position: relative; width: 1085px; min-height: 600px; margin
   .jie-row li .jie-title{max-width: 100%;}
 
   body .fly-user-main{width: auto; margin: 10px;}
-  .fly-user-main>.layui-nav{left: -300px; transition: all .3s; -webkit-transition: all .3s;}
+  .fly-user-main>.layui-layuiNav{left: -300px; transition: all .3s; -webkit-transition: all .3s;}
   .fly-user-main>.fly-panel-user{width: auto; margin-left: 0; transition: all .3s; -webkit-transition: all .3s;}
   .site-tree-mobile{display: block!important; position: fixed; z-index: 100000; bottom: 20px; left: 10px; width: 50px; height: 50px; line-height: 50px; border-radius: 2px; text-align: center; background-color: rgba(0,0,0,.7); color: #fff;}
   .site-mobile .site-tree-mobile{display: none !important;}
-  .site-mobile .fly-user-main>.layui-nav{left: 0;}
+  .site-mobile .fly-user-main>.layui-layuiNav{left: 0;}
   .site-mobile .site-mobile-shade{content: ''; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0,0,0,.9); z-index: 999;}
 }
